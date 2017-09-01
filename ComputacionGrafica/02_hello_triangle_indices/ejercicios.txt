@@ -1,0 +1,11 @@
+
+
+1) Genere dos triangulos que formen un cuadrado, usando la minima cantidad de vertices.
+
+2) Ahora genere dos triangulos, pero cada uno contenido en un VAO distinto.
+
+3) Modifique el programa para recibir un argumento "n" por ejecucion y generar n triangulos 
+en un patron de grilla, con la minima cantidad de vertices. 
+
+4) Similar a 3), pero ahora genere "n" triangulos en forma de abanico, con la minima 
+cantidad de vertices.

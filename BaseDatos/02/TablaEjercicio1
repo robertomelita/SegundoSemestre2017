@@ -1,0 +1,61 @@
+DICCIONARIO
+
+CLIENTE:
+	-*NumeroCliente:		INT
+	-DireccionesEnvio:		VARCHAR()
+	-Saldo:					INT
+	-LimiteCredito:			INT
+
+ARTICULO:
+	-*NumeroArticulo:		INT
+	-Descripcion:			VARCHAR()
+
+FABRICA:
+	-*NumeroFabrica:		VARCHAR()
+	-Telefono:				INT
+	-NumeroArticulos:		INT
+
+PEDIDO:
+	-CodigoPedido:			INT
+	-NumeroArticuloPedido:	INT
+	-Cantidad:				INT
+	-#NumeroCliente:		INT
+	-#DireccionEnvio:		VARCHAR
+	-FechaPedido:			DATE
+	-HoraPedido:			TIME
+	
+
+
+
+
+
+
+MODELO RELACIONAL:
+
+CLIENTE(*NumeroCliente,Saldo,LimiteCredito)
+DIRECCION(*IDir,Numero,Calle,Comuna,Ciudad,#NumeroCliente)
+PEDIDO(*Codigo,Fecha,#NumeroCliente,#IDir)
+TIPOARTICULO(*NumeroArticulo, Descripcion, #Codigo)
+FABRICA(*NumeroFabrica, Telefono)
+PRODUCE(*(#NumeroArticulo, #NumeroFabrica), Stock)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

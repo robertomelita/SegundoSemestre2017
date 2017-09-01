@@ -1,0 +1,36 @@
+1) Implementar "GLuint genvbo(GLfloat *array, int n)" en un archivo "objects.h", que crea el vbo asociado a array y retorna el identificador correspondiente.
+
+2) Implementar "GLuint genvao(GLfloat *verts, GLfloat *cols, GLuint *indices, int nvert, int nind)" 
+que crea el VAO asociado a los arreglos y retorna el identificador. Haga  uso de genvbo() dentro de genvao para facilitar las cosas.
+
+3) Modifique el codigo fuente para que los objetos creados hagan uso de su funcion genvao. 
+
+4) Extienda el programa para recibir un argumento N, crear N puntos, N triangulos y N cuadrados, todos ubicados aleatoriamente. Use las nuevas funciones para trabajar de forma mas modular.
+
+
+
+*************************
+DESAFIO EXTRA: Cree un VAO para dibujar N + 3 puntos (GL_POINTS). Los primeros 3
+vertices ubiquelos de forma fija formando un triangulo equilatero. Los
+siguientes N puntos ubiquelos de la siguiente forma:
+
+    a) Escoger arbitrariamente un punto v0 aleatorio en el plano dentro del
+    triangulo. Este no se dibuja (no se incluye en la lista a dibujar), 
+    sino que actua como un cursor.
+
+    b) Seleccionar, al azar (de alguna forma con rand()), cualquiera de
+    los 3 vertices del triangulo, llamemoslo vt. 
+
+    c) Mover v0 a la posicion de distancia media con respecto a vt.
+
+    d) Generar un nuevo vertice en aquella posicion.
+
+    e) volver al paso b) hasta que los N vertices sean
+    generados.
+
+    f) dibujar los vertices generados como GL_POINTS
+
+    g) muestre en el slack del curso la imagen
+    resultante. El primero que muestre la imagen
+    correcta ganara un premio.
+*************************

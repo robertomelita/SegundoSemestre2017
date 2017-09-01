@@ -1,0 +1,7 @@
+Ejercicios:
+
+1) Genere cambios suaves de color en tiempo real.
+
+2) Genere movimiento continuo al triangulo desplazandolo y rebotando con las esquinas.
+
+3) Haga que el triangulo se agrande y encoja en tiempo real a medida que pasa el tiempo.

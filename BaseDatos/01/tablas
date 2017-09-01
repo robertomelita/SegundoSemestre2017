@@ -1,0 +1,5 @@
+CAMIONERO(*Rfc, Poblacion, Telefono, Salario)
+CAMION(*Matricula, Potencia, Modelo, Tipo)
+CONDUCE(*#Rfc, *#Matricula)
+PAQUETE(*Codigo, Descripcion, Destinatario, Direccion, #Rfc, #CodigoCiudad)
+CIUDAD(*CodigoCiudad, Nombre)

@@ -1,0 +1,23 @@
+
+0) Analize el codigo y entienda como la matriz logra un efecto sobre los datos.
+Para los siguientes ejercicios apoyese de los links:
+http://www.opengl-tutorial.org/beginners-tutorials/tutorial-3-matrices/
+http://www.cprogramming.com/tutorial/3d/rotationMatrices.html
+
+
+
+Para los siguientes ejercicios, utilize transformaciones con matrices y apoyese de las funciones 
+ya creadas en maths_funcs.cpp:
+
+1) Muevan el triangulo por una ruta rectangular
+
+2) Agrandar y achicar el triangulo.
+
+3) Rotar el triangulo alrededor del eje Z utilizando transformaciones con matrices. Investigue 
+cuales elementos de la matriz corresponden a la rotacion en x,y,z. 
+
+4) Combinar 1) 2) y 3) para que sucedan al mismo tiempo.
+
+5) Vea la forma de usar la interaccion por teclado para controlar las transformaciones de 1) 2) y 3).
+
+6) Instale la libreria glm y reemplaze las matrices y sus operaciones involucradas.
