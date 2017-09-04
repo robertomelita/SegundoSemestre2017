@@ -110,8 +110,8 @@ int main () {
 		}
 		gameplay(&dx,&dy,&tx,&ty,&deg);
 		// update the matrix
-		mat = rotate_z_deg(mat,deg);
 		mat = scale(mat,vec3(tx, ty, 0.0));
+		mat = rotate_z_deg(mat,deg);
 		mat = translate(mat, vec3(dx, dy, 0.0));
 		glUniformMatrix4fv (matrix_location, 1, GL_FALSE, mat.m);
 		
