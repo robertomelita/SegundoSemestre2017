@@ -52,7 +52,8 @@ int main(){
 	glViewport (0, 0, g_gl_width, g_gl_height);
 
     /* objeto enemigo */
-    enemigo *e1 = new enemigo((char*)"mallas/suzanne.obj");
+	enemigo *e1 = new enemigo((char*)"mallas/plano2.obj");
+	enemigo *e2 = new enemigo((char*)"mallas/cosa.obj");
 
 	
 /*-------------------------------CREATE SHADERS-------------------------------*/
@@ -111,7 +112,9 @@ int main(){
 		//glBindVertexArray (monkey_vao);
 		//glDrawArrays (GL_TRIANGLES, 0, monkey_point_count);
         glBindVertexArray(e1->getvao());
-        glDrawArrays(GL_TRIANGLES,0,e1->getnumvertices());
+		glDrawArrays(GL_TRIANGLES,0,e1->getnumvertices());
+		glBindVertexArray(e2->getvao());
+        glDrawArrays(GL_TRIANGLES,0,e2->getnumvertices());
 		// update other events like input handling 
 		glfwPollEvents();
 		

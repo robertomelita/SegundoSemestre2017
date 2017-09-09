@@ -12,36 +12,43 @@
 
 #define PI 3.14159265359
 bool gameplay(float cam_speed, double elapsed_seconds, float *cam_pos, float *cam_yaw, float cam_yaw_speed){
-    bool cam_moved = false;
+	bool cam_moved = false;
+	float sensibilidad = 2.5f;
     float ryaw = *cam_yaw*PI/180.0;
     if (glfwGetKey (g_window, GLFW_KEY_A)) {
+		cam_pos[0] += sin(ryaw-PI/2)* cam_speed * elapsed_seconds * sensibilidad;
+        cam_pos[2] += cos(ryaw-PI/2)* cam_speed * elapsed_seconds * sensibilidad;
         cam_moved = true;
     }
     if (glfwGetKey (g_window, GLFW_KEY_D)) {
+		cam_pos[0] -= sin(ryaw-PI/2)* cam_speed * elapsed_seconds * sensibilidad;
+        cam_pos[2] -= cos(ryaw-PI/2)* cam_speed * elapsed_seconds * sensibilidad;
         cam_moved = true;
     }
     if (glfwGetKey (g_window, GLFW_KEY_PAGE_UP)) {
-        cam_pos[1] += cam_speed * elapsed_seconds;
+        cam_pos[1] += cam_speed * elapsed_seconds * sensibilidad;
         cam_moved = true;
     }
     if (glfwGetKey (g_window, GLFW_KEY_PAGE_DOWN)) {
-        cam_pos[1] -= cam_speed * elapsed_seconds;
+        cam_pos[1] -= cam_speed * elapsed_seconds * sensibilidad;
         cam_moved = true;
     }
     if (glfwGetKey (g_window, GLFW_KEY_W)) {
-        cam_pos[0] -= sin(ryaw)* cam_speed * elapsed_seconds;
-        cam_pos[2] -= cos(ryaw)* cam_speed * elapsed_seconds;
+        cam_pos[0] -= sin(ryaw)* cam_speed * elapsed_seconds * sensibilidad;
+        cam_pos[2] -= cos(ryaw)* cam_speed * elapsed_seconds * sensibilidad;
         cam_moved = true;
     }
     if (glfwGetKey (g_window, GLFW_KEY_S)) {
+		cam_pos[0] += sin(ryaw)* cam_speed * elapsed_seconds * sensibilidad;
+        cam_pos[2] += cos(ryaw)* cam_speed * elapsed_seconds * sensibilidad;
         cam_moved = true;
     }
     if (glfwGetKey (g_window, GLFW_KEY_LEFT)) {
-        *cam_yaw += cam_yaw_speed * elapsed_seconds;
+        *cam_yaw += cam_yaw_speed * elapsed_seconds * sensibilidad * 4;
         cam_moved = true;
     }
     if (glfwGetKey (g_window, GLFW_KEY_RIGHT)) {
-        *cam_yaw -= cam_yaw_speed * elapsed_seconds;
+        *cam_yaw -= cam_yaw_speed * elapsed_seconds * sensibilidad * 4;
         cam_moved = true;
     }
 
