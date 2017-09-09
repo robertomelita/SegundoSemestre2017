@@ -13,8 +13,14 @@
 #define PI 3.14159265359
 bool gameplay(float cam_speed, double elapsed_seconds, float *cam_pos, float *cam_yaw, float cam_yaw_speed){
 	bool cam_moved = false;
+	bool cam_fast = false;
+	bool cam_slow = false;
 	float sensibilidad = 2.5f;
-    float ryaw = *cam_yaw*PI/180.0;
+	float ryaw = *cam_yaw*PI/180.0;
+	if (glfwGetKey (g_window, GLFW_KEY_LEFT_SHIFT)) cam_fast = true;
+	if (cam_fast) sensibilidad = 7.5f;
+	if (glfwGetKey(g_window, GLFW_KEY_LEFT_CONTROL)) cam_slow = true;
+	if (cam_slow) sensibilidad = 1.0f;
     if (glfwGetKey (g_window, GLFW_KEY_A)) {
 		cam_pos[0] += sin(ryaw-PI/2)* cam_speed * elapsed_seconds * sensibilidad;
         cam_pos[2] += cos(ryaw-PI/2)* cam_speed * elapsed_seconds * sensibilidad;
@@ -44,13 +50,13 @@ bool gameplay(float cam_speed, double elapsed_seconds, float *cam_pos, float *ca
         cam_moved = true;
     }
     if (glfwGetKey (g_window, GLFW_KEY_LEFT)) {
-        *cam_yaw += cam_yaw_speed * elapsed_seconds * sensibilidad * 4;
+        *cam_yaw += cam_yaw_speed * elapsed_seconds * sensibilidad * 2;
         cam_moved = true;
     }
     if (glfwGetKey (g_window, GLFW_KEY_RIGHT)) {
-        *cam_yaw -= cam_yaw_speed * elapsed_seconds * sensibilidad * 4;
+        *cam_yaw -= cam_yaw_speed * elapsed_seconds * sensibilidad * 2;
         cam_moved = true;
-    }
+	}
 
     //if(cam_moved){
     //    printf("yaw = %f\n", *cam_yaw);
@@ -58,7 +64,7 @@ bool gameplay(float cam_speed, double elapsed_seconds, float *cam_pos, float *ca
     return cam_moved;
 }
 
-bool load_mesh (const char* file_name, GLuint* vao, int* point_count) {
+bool load_mesh (const char* file_name, GLuint* vao, int* point_count, vec3 pos) {
 	const aiScene* scene = aiImportFile (file_name, aiProcess_Triangulate);
 	if (!scene) {
 		fprintf (stderr, "ERROR: reading mesh %s\n", file_name);
@@ -94,9 +100,9 @@ bool load_mesh (const char* file_name, GLuint* vao, int* point_count) {
 		points = (GLfloat*)malloc (*point_count * 3 * sizeof (GLfloat));
 		for (int i = 0; i < *point_count; i++) {
 			const aiVector3D* vp = &(mesh->mVertices[i]);
-			points[i * 3] = (GLfloat)vp->x;
-			points[i * 3 + 1] = (GLfloat)vp->y;
-			points[i * 3 + 2] = (GLfloat)vp->z;
+			points[i * 3] = (GLfloat)vp->x + pos.v[0];			//Coordenada X
+			points[i * 3 + 1] = (GLfloat)vp->y + pos.v[1];		//Coordenada Y
+			points[i * 3 + 2] = (GLfloat)vp->z + pos.v[2];		//Coordenada Z
 		}
 	}
 	if (mesh->HasNormals ()) {

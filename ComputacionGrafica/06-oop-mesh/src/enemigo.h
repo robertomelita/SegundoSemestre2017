@@ -12,7 +12,7 @@ class enemigo{
         char* filename;
 
     public:
-        enemigo(char *filename);
+        enemigo(char *filename, vec3 pos);
         void atacar();
         void moverse();
         void morir();

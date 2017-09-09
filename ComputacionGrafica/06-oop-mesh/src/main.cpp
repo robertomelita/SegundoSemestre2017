@@ -35,7 +35,7 @@
 //#define MESH_FILE "cosa.obj"
 #define MESH_FILE "mallas/suzanne.obj"
 
-// keep track of window size for things like the viewport and the mouse cursor
+// keep track of window size for things like the viewport and the mouse cursor 9 10 12 15 16
 int g_gl_width = 1280;
 int g_gl_height = 690;
 GLFWwindow* g_window = NULL;
@@ -52,8 +52,9 @@ int main(){
 	glViewport (0, 0, g_gl_width, g_gl_height);
 
     /* objeto enemigo */
-	enemigo *e1 = new enemigo((char*)"mallas/plano2.obj");
-	enemigo *e2 = new enemigo((char*)"mallas/cosa.obj");
+	enemigo *e1 = new enemigo((char*)"mallas/suzanne.obj",vec3(-1.5f,0.0f,0.0f));
+	enemigo *e2 = new enemigo((char*)"mallas/plano2.obj",vec3(0.0f,-1.5f,0.0f));
+	enemigo *e3 = new enemigo((char*)"mallas/suzanne.obj",vec3(1.5f,0.0f,0.0f));
 
 	
 /*-------------------------------CREATE SHADERS-------------------------------*/
@@ -83,7 +84,7 @@ int main(){
 		
 	float cam_speed = 3.0f; // 1 unit per second
 	float cam_yaw_speed = 30.0f; // 10 degrees per second
-	float cam_pos[] = {0.0f, 0.0f, 5.0f}; // don't start at zero, or we will be too close
+	float cam_pos[] = {0.0f, 1.0f, 5.0f}; // don't start at zero, or we will be too close
     vec3 campos(0.0f, 0.0f, 5.0f);
 	float cam_yaw = 0.0f; // y-rotation in degrees
 	mat4 T = translate (identity_mat4 (), vec3 (-cam_pos[0], -cam_pos[1], -cam_pos[2]));
@@ -114,7 +115,9 @@ int main(){
         glBindVertexArray(e1->getvao());
 		glDrawArrays(GL_TRIANGLES,0,e1->getnumvertices());
 		glBindVertexArray(e2->getvao());
-        glDrawArrays(GL_TRIANGLES,0,e2->getnumvertices());
+		glDrawArrays(GL_TRIANGLES,0,e2->getnumvertices());
+		glBindVertexArray(e3->getvao());
+        glDrawArrays(GL_TRIANGLES,0,e3->getnumvertices());
 		// update other events like input handling 
 		glfwPollEvents();
 		

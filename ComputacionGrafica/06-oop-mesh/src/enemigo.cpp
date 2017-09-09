@@ -9,11 +9,10 @@
 #include "enemigo.h"
 
 using namespace std;
-enemigo::enemigo(char* filename){
+enemigo::enemigo(char* filename, vec3 pos){
 	vida = 100;
-	vec3 pos = vec3(0,0,0);
 	this->filename = filename;
-	assert(load_mesh(filename, &vao, &numvertices));
+	assert(load_mesh(filename, &vao, &numvertices, pos));
 }
 
 void enemigo::atacar(){
