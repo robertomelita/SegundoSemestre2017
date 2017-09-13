@@ -1,0 +1,12 @@
+
+1) Use blender para crear un suelo.
+2) Use blender para crear una muralla.
+3) En el programa, importe una instancia de suelo y dos de muralla.
+4) Extienda la definicion de malla para que sea mas general y pueda tener posicion y transformaciones.
+5) Vea la forma de implementar el salto en las acciones.
+
+EXTRA:
+a) Generar N monos en posiciones aleatorias, ./prog N
+b) Implementar deteccion de colisiones fuerza bruta.
+c) Hacer deteccion de colisiones con grilla.
+d) Optimizar la deteccion de colisiones con un arbol (quad-tree u oct-tree). 

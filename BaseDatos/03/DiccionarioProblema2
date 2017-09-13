@@ -1,0 +1,35 @@
+DICCIONARIO:
+
+CAMPO       TIPO
+RUTP        VARCHAR(20)
+nombrep     VARCHAR(20)
+telefono    INT
+Pagina web  VARCHAR(20)
+RUTC        VARCHAR(20)
+nombreC     VARCHAR(20)
+calle       VARCHAR(20)
+numero      INT 
+comuna      VARCHAR(20)
+cuidad      VARCHAR(20)
+Id Prod     INT
+NombreP     VARCHAR(20)
+Precio      INT
+Stock       INT
+id cat      INT
+nombre cat  VARCHAR(20)
+descripcion VARCHAR(20)
+id venta    INT
+descuento   INT
+Monto final INT
+
+
+MODELO RELACIONAL:
+
+PROVEEDOR(*RUT, Nombre, Web, Calle, N°, Comuna, Ciudad, NumT)
+CLIENTE(*Rut, Nombre, Calle, N°, Comuna, Ciudad)
+TELEFONO(NumT,#RUT_Cliente)
+TPRODUCTO(*ID, Nombre, Precio, Stock, #ID_Categoria)
+PROVEE(*(#RUT_Proveedor,#ID_Product))
+CATEGORIA(*ID, Nombre, Descripcion)
+COMPRA(*ID, Descuento, Monto, Fecha, #RUT_Cliente)
+CONTIENE(*(#ID_Compra,#ID_Product), Cantiadad, Monto)
