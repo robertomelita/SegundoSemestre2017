@@ -1,0 +1,20 @@
+1) Modificar las coordenadas de 
+la textura para que todos los 
+1.0 sean 0.5
+
+2) Modificar las coordenadas de la 
+textura para que todos los 1.0 
+sean 4.0
+
+3) Modificar linea 68 y 69 el 
+parametro GL_CLAMP_TO_EDGE a GL_REPEAT
+
+4) Variar el Filtro Anisotropico (linea 72) 
+
+5) modificar el valor de transparencia del texel.
+
+6) invertir la textura en el fragment shader
+
+7) Investigue la forma de incluir una segunda textura.
+
+8) Haga un blend entre ambas texturas, que pase de una a la otra suavemente y regrese.

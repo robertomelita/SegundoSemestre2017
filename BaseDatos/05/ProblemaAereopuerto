@@ -1,0 +1,7 @@
+Aeropuerto(*codigo,nombre,ciudad,pais)
+Programa(*n programa, linea)
+Vuelo(*n vuelo,plaza vacia,fecha,#n programa,#idmodelo)
+Modelo avion(*idmodelo,capacidad)
+Escala(*(#codigo,#n programa), orden)
+Hace(*(#codigo,#n programa),tipo)
+realizar(*(#n programa,#dia))
