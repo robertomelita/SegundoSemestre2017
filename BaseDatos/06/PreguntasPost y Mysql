@@ -1,0 +1,21 @@
+Cuando fue creado PostgreSQL? por quien? antes o despues de MySQL?
+-PostgreSQL: Fue creado en 1989. por un grupo de desarrolladores "PostgreSQL Global Development Group".
+-MySQL: Fue lanzado en 1995, por MySQL AB.
+
+PostgreSQL es un SGBD? es un SGBD relacional?
+-PostgreSLQ: OO/Relacional.
+-MySQL: Relacional.
+
+Cual es la licencia de PostgreSQL y MySQL?
+-PostgreSQL: PostgreSQL (BSD, MIT).
+-MySQL: GPL/Open Source.
+
+Cuales son las ventajas y principales caracteristicas del modelo orientado a objetos(oo)?
+-Clases.
+-Herencia.
+-Modularidad.
+-Entidades.
+-Interfaz.
+
+Que es un UML?
+-Lenguaje de modelado de sistemas de software.
