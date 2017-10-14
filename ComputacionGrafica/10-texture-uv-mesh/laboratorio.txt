@@ -1,0 +1,23 @@
+Parte 1:
+1) Ejecute el programa y vea como el cubo recibe texture mapping.
+
+2) Utilize Blender para crear una esfera UV y generar un mapeo esferico.
+
+3) Ajuste el mapeo para que cubra toda la imagen
+
+4) Cargue la esfera en vez del rectangulo en el programa OpenGL.
+
+5) En el fragment shader, vea la forma de generar un crater sobre la textura.
+
+
+Parte 2:
+1) Construya una muralla en Blender, que tenga un grosor.
+
+2) Aplique texture mapping con una textura de ladrillos obtenida de internet.
+
+3) Incluya esta malla con su textura en el programa OpenGL.
+
+4) En el fragment shader, incluya un offset en las coordenadas de texturas, que cambie de forma dinamica en tiempo real, para lograr un efecto de
+desplazamiento de la textura sobre la superficie.
+
+5) Ahora reemplaze la textura de ladrillo por una de agua o nubes.
