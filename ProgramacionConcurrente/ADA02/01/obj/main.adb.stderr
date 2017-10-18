@@ -1,0 +1,11 @@
+main.adb:4:17: a generic package is not allowed in a use clause
+main.adb:21:10: "Random" is not visible
+main.adb:21:10: non-visible declaration at a-nudira.ads:50
+main.adb:22:07: no candidate interpretations match the actuals:
+main.adb:22:07: missing argument for parameter "Item" in call to "Put" declared at a-textio.ads:241
+main.adb:22:07: missing argument for parameter "Item" in call to "Put" declared at a-textio.ads:207
+main.adb:22:07: possible missing instantiation of Text_IO.Integer_IO
+main.adb:22:11: expected type "Standard.String"
+main.adb:22:11: found type "Standard.Integer"
+main.adb:22:11:   ==> in call to "Put" at a-textio.ads:242
+main.adb:22:11:   ==> in call to "Put" at a-textio.ads:208

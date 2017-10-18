@@ -68,6 +68,8 @@ int main(){
 	glUseProgram (shader_programme);
 	glUniformMatrix4fv (proj_mat_location, 1, GL_FALSE, proj.m);
 
+	float a = 0.0f;
+		
     malla *caja = new malla((const char*)"mallas/sphere.obj", shader_programme, GL_TRIANGLES);
     caja->load_texture("textures/sun1k.jpg");
 	while (!glfwWindowShouldClose (g_window)) {
@@ -81,9 +83,10 @@ int main(){
 		glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		glViewport (0, 0, g_gl_width, g_gl_height);
 		glUseProgram (shader_programme);
-
+		a+=0.1f;
         // render caja
 		caja->reset_matrix();
+		caja->mrotatey(a);
         caja->render_indices();
         //caja->render_vertices_points(3.0f);
 

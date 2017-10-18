@@ -1,0 +1,13 @@
+
+1) En la funcion generate() de esfera, corrija el problema de la tierra invertida.
+
+2) Haga rotar la tierra sobre su propio eje.
+
+3) Modifique el fragment shader para que tenga un efecto de iluminacion-sombra
+en base a una coordenada de sol (x,y,z) arbitraria. Pista: utilice la
+informacion de las normales.
+
+4) Agregue una Luna y ubiquela a una distancia prudente de la tierra.
+
+5) Haga rotar la luna alrededor de la tierra, y que al mismo tiempo la luna
+gire en su propio eje.

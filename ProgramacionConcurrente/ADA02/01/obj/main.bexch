@@ -1,0 +1,24 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+/home/roberto/SegundoSemestre2017/ProgramacionConcurrente/ADA02/01/tareasarray.gpr
+20171016174541
+[BOUND OBJECT FILES]
+/home/roberto/SegundoSemestre2017/ProgramacionConcurrente/ADA02/01/obj/main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-L/home/roberto/SegundoSemestre2017/ProgramacionConcurrente/ADA02/01/obj/
+-L/home/roberto/SegundoSemestre2017/ProgramacionConcurrente/ADA02/01/obj/
+-L/usr/lib/gcc/x86_64-linux-gnu/5/adalib/
+-shared
+-shared-libgcc
+-lgnarl-5
+-lgnat-5
+-lpthread
+-lrt
+[RUN PATH OPTION]
+/usr/lib/gcc/x86_64-linux-gnu/5/adalib/
+/usr/lib
