@@ -1,0 +1,11 @@
+tallermecanico.adb:30:07: invalid use of subtype mark in expression or call
+tallermecanico.adb:32:07: no candidate interpretations match the actuals:
+tallermecanico.adb:32:07: missing argument for parameter "Item" in call to "Put_Line" declared at a-textio.ads:259
+tallermecanico.adb:32:16: expected type "Standard.String"
+tallermecanico.adb:32:16: found type "pbuzon" defined at line 13
+tallermecanico.adb:32:16:   ==> in call to "Put_Line" at a-textio.ads:263
+tallermecanico.adb:46:11: too many arguments in call
+tallermecanico.adb:50:04: warning: no accept for entry "citaMecanico"
+tallermecanico.adb:50:04: warning: no accept for entry "entregaUsuario"
+tallermecanico.adb:52:07: no entry declaration matches accept statement
+tallermecanico.adb:55:07: no entry declaration matches accept statement
