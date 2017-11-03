@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__trenes.o
+[PROJECT FILES]
+/home/roberto/SegundoSemestre2017/ProgramacionConcurrente/ADA04/trenes.gpr
+20171030183143
+[BOUND OBJECT FILES]
+/home/roberto/SegundoSemestre2017/ProgramacionConcurrente/ADA04/obj/trenes.o
+[GENERATED SOURCE FILES]
+b__trenes.ads
+b__trenes.adb
+b__trenes.ali
+[RESULTING OPTIONS]
+-L/home/roberto/SegundoSemestre2017/ProgramacionConcurrente/ADA04/obj/
+-L/home/roberto/SegundoSemestre2017/ProgramacionConcurrente/ADA04/obj/
+-L/usr/gnat/lib/gcc/x86_64-pc-linux-gnu/6.3.1/adalib/
+-static
+-static-libgcc
+/usr/gnat/lib/gcc/x86_64-pc-linux-gnu/6.3.1/adalib/libgnarl.a
+/usr/gnat/lib/gcc/x86_64-pc-linux-gnu/6.3.1/adalib/libgnat.a
+-lpthread
+-lrt
+-ldl
