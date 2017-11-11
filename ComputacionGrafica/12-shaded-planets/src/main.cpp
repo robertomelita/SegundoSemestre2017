@@ -65,7 +65,7 @@ int main(){
 
 
     esfera *earth = new esfera(20, 20, 1.0, shader_programme);
-    earth->load_texture("textures/earth1k.jpg");
+    earth->load_texture("textures/earth8k.jpg");
 
 
 

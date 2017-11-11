@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project>
-    <vfs_file>/home/roberto/SegundoSemestre2017/ProgramacionConcurrente/ADA04/trenes.gpr</vfs_file>
+  <Project >
     <file_marker column=" 1" line=" 1" >
       <vfs_project>/home/roberto/SegundoSemestre2017/ProgramacionConcurrente/ADA04/trenes.gpr</vfs_project>
       <vfs_file>/home/roberto/SegundoSemestre2017/ProgramacionConcurrente/ADA04/src/main.adb</vfs_file>
@@ -18,9 +17,17 @@
       <vfs_project>/home/roberto/SegundoSemestre2017/ProgramacionConcurrente/ADA04/trenes.gpr</vfs_project>
       <vfs_file>/home/roberto/SegundoSemestre2017/ProgramacionConcurrente/ADA04/src/main.adb</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 1" line=" 50" >
+    <file_marker column=" 1" line=" 50" >
       <vfs_project>/home/roberto/SegundoSemestre2017/ProgramacionConcurrente/ADA04/trenes.gpr</vfs_project>
       <vfs_file>/home/roberto/SegundoSemestre2017/ProgramacionConcurrente/ADA04/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 44" >
+      <vfs_project>/home/roberto/SegundoSemestre2017/ProgramacionConcurrente/ADA04/trenes.gpr</vfs_project>
+      <vfs_file>/home/roberto/SegundoSemestre2017/ProgramacionConcurrente/ADA04/src/trenes.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>/home/roberto/SegundoSemestre2017/ProgramacionConcurrente/ADA04/trenes.gpr</vfs_project>
+      <vfs_file>/home/roberto/SegundoSemestre2017/ProgramacionConcurrente/ADA04/trenes.gpr</vfs_file>
     </file_marker>
   </Project>
 </Locations>

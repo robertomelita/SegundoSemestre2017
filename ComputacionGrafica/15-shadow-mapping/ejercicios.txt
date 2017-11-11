@@ -1,0 +1,4 @@
+
+
+1) Hacer que la luz oscile su posicion en un rango acotado, para generar sombras dinamicas.
+2) Oscilar una de las mallas para crear un escenario mas dinamico.

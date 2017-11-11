@@ -16,10 +16,13 @@ uniform mat4 view, proj, obj;
 out vec3 light;
 out vec3 normal;
 out vec2 st;
+out vec3 position_eye;
+out vec3 normal_eye;
 
 void main(){
     light = (view * vec4(1.0f, 0.0f, 1.0f, 0.0f)).xyz;
 	st = texture_coord;
 	normal = (view * obj * vec4(vertex_normal, 0.0)).xyz;
 	gl_Position = proj * view * obj * vec4(vertex_position, 1.0);
+	normal_eye      = vec3(view* obj *vec4(vertex_normal, 0.0));
 }

@@ -1,0 +1,4 @@
+Este desafio es opcional y la nota obtenida borrara 
+la peor de las notas chicas.
+
+1) Aplicar shadow mapping a la escena, para que luna proyecte una sombra sobre la tierra y la tierra sobre la luna, cuando corresponda.

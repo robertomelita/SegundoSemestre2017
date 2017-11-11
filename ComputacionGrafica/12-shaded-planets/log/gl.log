@@ -1,7 +1,7 @@
-GL_LOG_FILE log. local time Tue Oct 17 11:06:31 2017
+GL_LOG_FILE log. local time Sat Nov 11 15:01:27 2017
 
-starting GLFW 3.1.2 X11 GLX clock_gettime /dev/js XI Xf86vm sharedrenderer: GeForce GTX 1060 with Max-Q Design/PCIe/SSE2
-version: 4.5.0 NVIDIA 375.66
+starting GLFW 3.2.1 X11 GLX EGL clock_gettime /dev/js Xf86vm sharedrenderer: GeForce GTX 1060 with Max-Q Design/PCIe/SSE2
+version: 4.5.0 NVIDIA 384.90
 creating shader from shaders/test_vs.glsl...
 shader compiled. index 1
 creating shader from shaders/test_fs.glsl...
